@@ -1,0 +1,100 @@
+.teamDetails {
+  background-color: midnightblue;
+  color: whitesmoke;
+}
+.bannarArea {
+  width: 100%;
+  background-color: cornsilk;
+  position: relative;
+}
+.bannerArea img {
+  width: 100%;
+  opacity: 0.4;
+}
+.banner {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bannerlogo {
+  position: relative;
+}
+
+.bannerLogo img {
+  position: absolute;
+  width: 120px;
+  margin: "20px";
+  opacity: 1;
+  left: 46%;
+  top: 7%;
+}
+
+.flex-container {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+}
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+}
+.flex-item-right {
+  text-align: center;
+  padding: 10px;
+  flex: 50%;
+}
+.foter {
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+}
+.socialIcon {
+  display: inline-block;
+  margin: 25px;
+}
+.teamImg img {
+  width: 300px;
+}
+.socialIcon {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    color: white;
+  }
+  .bannerLogo > img {
+    position: absolute;
+    height: 100px;
+    bottom: 15px;
+    left: 45%;
+  }
+  .details {
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  body {
+    color: white;
+  }
+  .bannerLogo {
+    position: absolute;
+    top: 5px;
+    left: 35%;
+    width: 70px;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

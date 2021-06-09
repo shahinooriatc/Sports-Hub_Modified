@@ -1,0 +1,24 @@
+.teamsfull {
+}
+.teamsArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardStyle {
+  /* width: 200px; */
+  background-color: rgb(250, 244, 244);
+  margin: 5px;
+  padding: 0px 25px;
+  border: 2px solid gold;
+  border-radius: 15px;
+}
+.cardStyle img {
+  width: 200px;
+  margin: 20px 0px;
+}
+button {
+  background-color: deepskyblue;
+  color: #000;
+  margin: 10px;
+}

@@ -1,0 +1,50 @@
+.home {
+  height: 250px;
+}
+.homeBanner {
+  height: 250px;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+.homeBanner h1 {
+  padding: 80px 0;
+  text-align: center;
+  font-size: 42px;
+  color: rgb(245, 209, 7);
+  opacity: 1;
+  font-weight: 900;
+}
+
+.hometeams {
+  background-color: midnightblue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 30px;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+  .hometeams {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }
+  .hometeams {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
